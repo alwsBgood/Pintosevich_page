@@ -147,7 +147,8 @@ body.unscroll {
 
 .btn {
   height: 50px;
-  width: 310px;
+  max-width: 310px;
+  width: 100%;
   -webkit-box-shadow: 0 15px 21px rgba(255, 228, 0, 0.28);
   box-shadow: 0 15px 21px rgba(255, 228, 0, 0.28);
   background-color: #ffe400;
@@ -158,9 +159,9 @@ body.unscroll {
   -webkit-transition: all .3s;
   transition: all .3s; }
   .btn--small {
-    width: 200px; }
+    max-width: 200px; }
   .btn--big {
-    width: 340px; }
+    max-width: 340px; }
   .btn:hover {
     -webkit-box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
     box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
@@ -340,30 +341,31 @@ body.unscroll {
     padding: 0 20px; }
   .mobile_view {
     display: block; }
-  #sec_00 {
+  .section_00 {
     padding-top: 20px;
     background-image: url("../img/sec_00-bg-mob.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     position: relative;
-    color: #fff; }
-    #sec_00 .play_btn {
+    color: #fff;
+    min-height: auto; }
+    .section_00 .play_btn {
       position: absolute;
       right: 20%;
       top: 200px; }
-    #sec_00 .header_main {
+    .section_00 .header_main {
       font-size: 76px; }
-      #sec_00 .header_main:before {
+      .section_00 .header_main:before {
         display: none; }
-    #sec_00 .col-5 {
+    .section_00 .col-5 {
       display: none; }
-    #sec_00 .call_back {
+    .section_00 .call_back {
       margin-top: 0; }
-    #sec_00 .main_content {
+    .section_00 .main_content {
       margin-bottom: 20px; }
-    #sec_00 .btn_dwn {
+    .section_00 .btn_dwn {
       display: none; }
-    #sec_00 .phone {
+    .section_00 .phone {
       float: left; }
   footer {
     text-align: center; }
@@ -384,3 +386,43 @@ body.unscroll {
     padding-top: 70px; }
   div[id*='modal_politics'] .btn_close_modal {
     top: 20px; } }
+
+@media (max-width: 530px) {
+  .call_back {
+    border: none;
+    font-size: 0px;
+    color: transparent;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-image: url(../img/call-icon.svg); }
+  .section_00 {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../img/sec_00-bg-mob_sm.jpg); }
+    .section_00 .main_content {
+      margin-top: 50px; }
+    .section_00 .play_btn {
+      position: static;
+      margin: 0 auto;
+      text-align: center; }
+    .section_00 .header_main {
+      font-size: 46px; }
+      .section_00 .header_main:before {
+        display: none; }
+    .section_00 .header_main-desc {
+      font-size: 20px;
+      margin-bottom: 40px; }
+    .section_00 .text .desctop_view, .section_00 .text br {
+      display: none; }
+    .section_00 .item {
+      margin: 50px 0 30px; }
+    .section_00 .btn {
+      margin: 30px 0; }
+  .text--borderb {
+    display: inline; }
+    .text--borderb:before {
+      display: none; } }

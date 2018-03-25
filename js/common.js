@@ -189,13 +189,19 @@ $('.slider_01').slick({
         slidesToScroll: 3,
         dots: true
       }
-    }
-    ,{
+    },{
       breakpoint: 767,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: true
+      }
+    },{
+      breakpoint: 530,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false
       }
     }
   ]
