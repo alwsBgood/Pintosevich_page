@@ -584,7 +584,7 @@
     max-width: 230px; }
 
 .youtube {
-  min-width: 750px;
+  max-width: 750px;
   width: 100%;
   height: 470px;
   cursor: pointer; }
@@ -1443,9 +1443,60 @@ input:-ms-input-placeholder {
   div[id*='modal_politics'] h2 {
     padding-top: 70px; }
   div[id*='modal_politics'] .btn_close_modal {
-    top: 20px; } }
+    top: 20px; }
+  .youtube {
+    height: 270px; } }
 
 @media (max-width: 530px) {
   div[id*="modal_callback"] {
     max-width: 500px;
-    min-width: 100%; } }
+    min-width: 100%; }
+  .text .desctop_view {
+    display: none; }
+  .youtube {
+    height: 230px; }
+  .header, .title_main {
+    font-size: 34px !important;
+    line-height: 40px !important; }
+  .section_03 .underheader .text--medium {
+    display: inline-block; }
+  .section_03 .sec_03-item-1 .price {
+    padding: 15px;
+    background-size: contain; }
+  .section_04 {
+    margin-top: -50px;
+    padding-bottom: 0; }
+    .section_04 .row-2 .col-2 {
+      width: 50%;
+      margin-bottom: 0px;
+      min-height: 330px; }
+      .section_04 .row-2 .col-2 .title {
+        font-size: 16px; }
+  .section_07 .item-2 {
+    margin-top: 40px; }
+  .section_08 {
+    padding: 40px 0; }
+  .section_10 {
+    padding: 40px 0 80px; }
+  .section_14 {
+    padding-top: 40px; }
+    .section_14 .packet {
+      padding-right: 10px;
+      padding-left: 10px; }
+      .section_14 .packet .btn {
+        margin-top: 30px; }
+    .section_14 .tablet-col-6 + .tablet-col-6 {
+      margin-top: 50px; }
+  .section_14 .packet_month .description {
+    margin-bottom: 0; }
+  .section_15 {
+    text-align: center;
+    padding-bottom: 0; }
+    .section_15 .col_custom {
+      text-align: left !important;
+      width: 49% !important;
+      margin-bottom: 40px; }
+    .section_15 .col_custom-5,
+    .section_15 .col_custom-6,
+    .section_15 .col_custom-7 {
+      margin-top: 0px; } }
