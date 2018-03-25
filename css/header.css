@@ -302,7 +302,7 @@ body.unscroll {
       fill: #fff; }
   .section_00 .play_wrapper {
     margin-top: 225px; }
-    .section_00 .play_wrapper .play_btn:hover #wcteb {
+    .section_00 .play_wrapper .play_btn:hover #wcteb, .section_00 .play_wrapper #wcteb5 {
       -webkit-transition: all .3s;
       transition: all .3s;
       fill: #fff; }
