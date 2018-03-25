@@ -85,7 +85,7 @@ $(function() {
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+38 (999) 999-9999");
+ $("input[type='tel']").mask("+7 (999) 999-9999");
 });
 
 
@@ -109,7 +109,7 @@ $(function() {
     $(this).append($('<div/>', {'class': 'play'}));
 
     $(document).delegate('#'+this.id, 'click', function() {
-      var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+      var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1&rel=0&amp;showinfo=0";
       if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
 
       var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
