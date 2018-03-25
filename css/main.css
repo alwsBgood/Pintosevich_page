@@ -587,11 +587,15 @@
   max-width: 750px;
   width: 100%;
   height: 470px;
+  margin-bottom: -5px;
   cursor: pointer; }
   .youtube:hover #wcteb2 {
     -webkit-transition: all .3s;
     transition: all .3s;
     fill: #fff; }
+
+#video_modal .md-content {
+  background-color: #000; }
 
 form {
   width: 400px;
@@ -601,21 +605,22 @@ form {
     margin: 5px 0; }
 
 footer {
-  padding: 15px 0 15px;
+  padding: 10px 0 10px;
   background-color: #202020; }
   footer .politics {
-    margin-top: 13px; }
+    margin-top: 8px; }
     footer .politics a {
       color: #65666a;
-      font-size: 15px; }
+      font-size: 15px;
+      line-height: 15px; }
     footer .politics a:hover {
       color: #ffe400; }
     footer .politics a + a {
       margin-left: 10px; }
   footer .logo_rezart {
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left: 0px;
-    width: 55px;
+    width: 35px;
     float: right; }
     footer .logo_rezart svg {
       fill: #fff;
@@ -867,7 +872,19 @@ div[id*="modal_politics"] {
   width: 25px;
   height: 13px;
   border: none;
-  outline: none; }
+  outline: none;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.slick-next:hover {
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  transform: translateX(5px); }
+
+.slick-prev:hover {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px); }
 
 .slick-next:before, .slick-prev:before {
   display: none; }
@@ -1285,6 +1302,10 @@ input:-ms-input-placeholder {
       margin-top: 0; }
     .section_06 .img-1 {
       display: none; }
+    .section_06 .img-4 {
+      width: 80%;
+      max-width: 458px;
+      margin-bottom: 30px; }
   .section_07 {
     background: none;
     padding: 80px 0 40px; }
@@ -1354,7 +1375,8 @@ input:-ms-input-placeholder {
     max-width: 458px; }
   .section_11 {
     overflow: hidden;
-    padding: 0; }
+    padding: 200px 0 0;
+    margin-top: -50px; }
     .section_11:before {
       display: none; }
     .section_11 .item-2 {
@@ -1362,7 +1384,11 @@ input:-ms-input-placeholder {
       padding: 40px 50px;
       background-color: #ffe400; }
       .section_11 .item-2:before {
-        display: none; }
+        width: 240px;
+        background-size: contain;
+        z-index: 1;
+        left: 0px;
+        bottom: 255px; }
       .section_11 .item-2 .text .desctop_view {
         display: none; }
   .section_12 {

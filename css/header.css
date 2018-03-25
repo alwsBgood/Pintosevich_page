@@ -302,7 +302,7 @@ body.unscroll {
       fill: #fff; }
   .section_00 .play_wrapper {
     margin-top: 225px; }
-    .section_00 .play_wrapper .play_btn:hover #wcteb, .section_00 .play_wrapper #wcteb5 {
+    .section_00 .play_wrapper .play_btn:hover #wcteb, .section_00 .play_wrapper .play_btn:hover #wcteb5 {
       -webkit-transition: all .3s;
       transition: all .3s;
       fill: #fff; }
@@ -388,21 +388,21 @@ body.unscroll {
     top: 20px; } }
 
 @media (max-width: 530px) {
-  .call_back {
-    border: none;
-    font-size: 0px;
-    color: transparent;
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    background-image: url(../img/call-icon.svg); }
   .section_00 {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-image: url(../img/sec_00-bg-mob_sm.jpg); }
+    .section_00 .call_back {
+      border: none;
+      font-size: 0px;
+      color: transparent;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      background-image: url(../img/call-icon.svg); }
     .section_00 .main_content {
       margin-top: 50px; }
     .section_00 .play_btn {
@@ -426,3 +426,9 @@ body.unscroll {
     display: inline; }
     .text--borderb:before {
       display: none; } }
+
+@media (max-height: 680px) {
+  .section_00 .main_content {
+    margin-top: 50px; }
+  .section_00 .item {
+    margin-top: 90px; } }
